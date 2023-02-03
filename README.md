@@ -14,9 +14,9 @@ create a report that includes what cryptocurrencies are on the trading market an
 
 ## Exploration & Cleanup
 ```
-print(loan_stats_df.shape)
-(115675, 86)
-print(loan_stats_df.isnull().values.any())
+print(crypto_df.shape)
+(1252, 6)
+print(crypto_df.isnull().values.any())
 True
 ```
 My first step with every data is to just gauge the size and whether or not there are null values. I see I'm working with a relatively small dataset, due to this being an aggregated dataset. I also do have null values, and I see there's no way to handle backfilling for this data. I'll need to drop these nulls.
